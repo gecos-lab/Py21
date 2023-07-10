@@ -1,2 +1,3 @@
 # Py21
-P21 calibration in python
+
+Python scripts to calibrate stochastic fracture network using P21   
