@@ -12,9 +12,10 @@ TODO:
 from pyvista import PolyData
 from vtkmodules.vtkFiltersGeometry import vtkGeometryFilter
 import numpy as np
+from typing import Tuple #for python version <3.9
 
 
-def slice_frac_net(frac_net: PolyData, n: int = 5, axis: 'str' = 'z') -> tuple[PolyData, list]:
+def slice_frac_net(frac_net: PolyData, n: int = 5, axis: 'str' = 'z') -> Tuple[PolyData, list]:
 
     slices = frac_net.slice_along_axis(n=n, axis=axis)
 

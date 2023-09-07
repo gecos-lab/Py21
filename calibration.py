@@ -9,7 +9,7 @@ data_list, line_fracture_index, vertex_list = fab_parser(path)
 
 frac_net = fab2vtk(data_list, line_fracture_index, vertex_list)
 
-slices, p21_list = slice_frac_net(frac_net)
+slices, p21_list = slice_frac_net(frac_net,n=1)
 
 plotter = pv.Plotter()
 # plotter.show_grid()

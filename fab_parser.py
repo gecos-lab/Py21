@@ -13,9 +13,10 @@ TODO:
 """
 
 import numpy as np
+from typing import Tuple #for python version <3.9
 
 
-def fab_parser(path: str) -> tuple[list, list, np.ndarray]:
+def fab_parser(path: str) -> Tuple[list, list, np.ndarray]:
 
     with open(path, 'r') as file:
         line_list = file.readlines()
