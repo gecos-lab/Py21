@@ -9,43 +9,70 @@ TODO:
     - Add p21 differentiation depending on the slices axis
 """
 
-from pyvista import PolyData
+from pyvista import PolyData, Plane, MultiBlock
 from vtkmodules.vtkFiltersGeometry import vtkGeometryFilter
 import numpy as np
 from typing import Tuple #for python version <3.9
 
+from vtkmodules.vtkFiltersModeling import vtkCookieCutter
 
-def slice_frac_net(frac_net: PolyData, n: int = 5, axis: 'str' = 'z') -> Tuple[PolyData, list]:
 
-    slices = frac_net.slice_along_axis(n=n, axis=axis)
+def slice_frac_net(frac_net: PolyData,
+                   n_slices: int = 5,
+                   axis: 'str' = 'z',
+                   grid_cell_xdim: int = 15,
+                   grid_cell_ydim: int = 15) -> Tuple[PolyData, MultiBlock]:
 
-    p21_list = []
+    slices = frac_net.slice_along_axis(n=n_slices, axis=axis)
+
+    grids = MultiBlock()
 
     for s in slices:
+        # print(s)
+        centre = s.center
+
         x_min, x_max, y_min, y_max, z_min, z_max = s.bounds
 
-        area_xy = (x_max-x_min)*(y_max-y_min)
-        area_xz = (x_max-x_min)*(z_max-z_min)
-        area_yz = (y_max-y_min)*(z_max-z_min)
+        x_dim = int(x_max-x_min)
+        y_dim = int(y_max-y_min)
 
-        id_list = s.cell_data['Fracture number']
+        x_res = int(x_dim/grid_cell_xdim)
+        y_res = int(y_dim/grid_cell_ydim)
 
-        geometry_filter = vtkGeometryFilter()
-        for idx in id_list:
+        grid = Plane(centre, i_size=x_dim, j_size=y_dim, i_resolution=x_res, j_resolution=y_res)
+        n_cells = grid.n_cells
+        p21_list = np.zeros(n_cells)
+        for cid in range(n_cells):
+            cell = grid.get_cell(cid)
+            cell_poly = PolyData(cell.points, faces=[4, 0, 1, 2, 3])
+            cutter = vtkCookieCutter()
+            cutter.SetInputData(s)
+            cutter.SetLoopsData(cell_poly)
+            cutter.Update()
 
-            line = s.extract_cells(s.cell_data['Fracture number'] == idx)
-            geometry_filter.SetInputData(line)
-            geometry_filter.Update()
+            pixel = PolyData(cutter.GetOutput())
+            id_list = pixel.cell_data['Fracture number']
+            geometry_filter = vtkGeometryFilter()
 
-            pv_line = PolyData(geometry_filter.GetOutput())
-            length = pv_line.compute_arc_length()['arc_length']
+            lengths = []
+            for idx in id_list:
 
-            s.cell_data['lengths'][np.where(s.cell_data['Fracture number'] == idx)] = max(length)
+                line = pixel.extract_cells(pixel.cell_data['Fracture number'] == idx)
+                geometry_filter.SetInputData(line)
+                geometry_filter.Update()
 
-        p21 = sum(s.cell_data['lengths'])/area_xy
-        p21_list.append(p21)
+                pv_line = PolyData(geometry_filter.GetOutput())
+                length = pv_line.compute_arc_length()['arc_length']
 
-    return slices, p21_list
+                lengths.append(sum(length))
+
+            p21 = sum(lengths)/(grid_cell_xdim*grid_cell_ydim)
+            p21_list[cid] = p21
+
+        grid.cell_data['p21'] = p21_list
+        grids.append(grid)
+
+    return slices, grids
 
 
 
