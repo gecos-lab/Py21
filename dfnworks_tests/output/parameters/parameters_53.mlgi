@@ -1,0 +1,24 @@
+define / ID / 53
+define / OUTFILE_GMV / mesh_53.gmv
+define / OUTFILE_AVS / mesh_53.inp
+define / OUTFILE_LG / mesh_53.lg
+define / POLY_FILE / poly_53.inp
+define / QUAD_FILE / tmp_quad_53.inp
+define / EXCAVATE_FILE / tmp_excavate_53.inp
+define / PRE_FINAL_FILE / tmp_pre_final_53.inp
+define / PRE_FINAL_MASSAGE / tmp_pre_final_massage_53.gmv
+define / H_SCALE / 1.500000e-01 
+define / H_EPS / 1.500000e-08 
+define / H_SCALE2 / 2.250000e-01 
+define / H_EXTRUDE / 7.500000e-02 
+define / H_TRANS / -0.002422 
+define / H_PRIME / 6.000000e-02 
+define / THETA  / 75.692693574314 
+define / X1 /  2055.092332939960 
+define / Y1 / 1379.210101141740 
+define / Z1 / -0.000000000000 
+define / X2 / -2055.092332939960 
+define / Y2 / -1379.210101141740 
+define / Z2 / 0.000000000000 
+define / FAMILY / 1 
+finish 

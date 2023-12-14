@@ -1,0 +1,24 @@
+define / ID / 274
+define / OUTFILE_GMV / mesh_274.gmv
+define / OUTFILE_AVS / mesh_274.inp
+define / OUTFILE_LG / mesh_274.lg
+define / POLY_FILE / poly_274.inp
+define / QUAD_FILE / tmp_quad_274.inp
+define / EXCAVATE_FILE / tmp_excavate_274.inp
+define / PRE_FINAL_FILE / tmp_pre_final_274.inp
+define / PRE_FINAL_MASSAGE / tmp_pre_final_massage_274.gmv
+define / H_SCALE / 1.500000e-01 
+define / H_EPS / 1.500000e-08 
+define / H_SCALE2 / 2.250000e-01 
+define / H_EXTRUDE / 7.500000e-02 
+define / H_TRANS / -0.002422 
+define / H_PRIME / 6.000000e-02 
+define / THETA  / 64.232184488157 
+define / X1 /  2460.133646116260 
+define / Y1 / -270.864252434134 
+define / Z1 / -0.000000000000 
+define / X2 / -2460.133646116260 
+define / Y2 / 270.864252434134 
+define / Z2 / 0.000000000000 
+define / FAMILY / 1 
+finish 

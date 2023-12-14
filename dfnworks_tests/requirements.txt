@@ -1,0 +1,12 @@
+numpy
+h5py
+scipy
+matplotlib
+argparse
+networkx
+meplstereonet
+fpdf
+pyvtk
+seaborn
+mpmath
+pyvista

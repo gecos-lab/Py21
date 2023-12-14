@@ -1,0 +1,286 @@
+
+# Change to read LaGriT
+read / lagrit /  mesh_106.lg / mo_106 / binary
+cmo / move / mo_106 / mo_final 
+define / MO_NAME_FRAC / mo_106
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_106
+cmo / delete / mo_106
+
+# Change to read LaGriT
+read / lagrit /  mesh_107.lg / mo_107 / binary
+cmo / move / mo_107 / mo_final 
+define / MO_NAME_FRAC / mo_107
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_107
+cmo / delete / mo_107
+
+# Change to read LaGriT
+read / lagrit /  mesh_108.lg / mo_108 / binary
+cmo / move / mo_108 / mo_final 
+define / MO_NAME_FRAC / mo_108
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_108
+cmo / delete / mo_108
+
+# Change to read LaGriT
+read / lagrit /  mesh_109.lg / mo_109 / binary
+cmo / move / mo_109 / mo_final 
+define / MO_NAME_FRAC / mo_109
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_109
+cmo / delete / mo_109
+
+# Change to read LaGriT
+read / lagrit /  mesh_110.lg / mo_110 / binary
+cmo / move / mo_110 / mo_final 
+define / MO_NAME_FRAC / mo_110
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_110
+cmo / delete / mo_110
+
+# Change to read LaGriT
+read / lagrit /  mesh_111.lg / mo_111 / binary
+cmo / move / mo_111 / mo_final 
+define / MO_NAME_FRAC / mo_111
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_111
+cmo / delete / mo_111
+
+# Change to read LaGriT
+read / lagrit /  mesh_112.lg / mo_112 / binary
+cmo / move / mo_112 / mo_final 
+define / MO_NAME_FRAC / mo_112
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_112
+cmo / delete / mo_112
+
+# Change to read LaGriT
+read / lagrit /  mesh_113.lg / mo_113 / binary
+cmo / move / mo_113 / mo_final 
+define / MO_NAME_FRAC / mo_113
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_113
+cmo / delete / mo_113
+
+# Change to read LaGriT
+read / lagrit /  mesh_114.lg / mo_114 / binary
+cmo / move / mo_114 / mo_final 
+define / MO_NAME_FRAC / mo_114
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_114
+cmo / delete / mo_114
+
+# Change to read LaGriT
+read / lagrit /  mesh_115.lg / mo_115 / binary
+cmo / move / mo_115 / mo_final 
+define / MO_NAME_FRAC / mo_115
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_115
+cmo / delete / mo_115
+
+# Change to read LaGriT
+read / lagrit /  mesh_116.lg / mo_116 / binary
+cmo / move / mo_116 / mo_final 
+define / MO_NAME_FRAC / mo_116
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_116
+cmo / delete / mo_116
+
+# Change to read LaGriT
+read / lagrit /  mesh_117.lg / mo_117 / binary
+cmo / move / mo_117 / mo_final 
+define / MO_NAME_FRAC / mo_117
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_117
+cmo / delete / mo_117
+
+# Change to read LaGriT
+read / lagrit /  mesh_118.lg / mo_118 / binary
+cmo / move / mo_118 / mo_final 
+define / MO_NAME_FRAC / mo_118
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_118
+cmo / delete / mo_118
+
+# Change to read LaGriT
+read / lagrit /  mesh_119.lg / mo_119 / binary
+cmo / move / mo_119 / mo_final 
+define / MO_NAME_FRAC / mo_119
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_119
+cmo / delete / mo_119
+
+# Change to read LaGriT
+read / lagrit /  mesh_120.lg / mo_120 / binary
+cmo / move / mo_120 / mo_final 
+define / MO_NAME_FRAC / mo_120
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_120
+cmo / delete / mo_120
+
+# Change to read LaGriT
+read / lagrit /  mesh_121.lg / mo_121 / binary
+cmo / move / mo_121 / mo_final 
+define / MO_NAME_FRAC / mo_121
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_121
+cmo / delete / mo_121
+
+# Change to read LaGriT
+read / lagrit /  mesh_122.lg / mo_122 / binary
+cmo / move / mo_122 / mo_final 
+define / MO_NAME_FRAC / mo_122
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_122
+cmo / delete / mo_122
+
+# Change to read LaGriT
+read / lagrit /  mesh_123.lg / mo_123 / binary
+cmo / move / mo_123 / mo_final 
+define / MO_NAME_FRAC / mo_123
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_123
+cmo / delete / mo_123
+
+# Change to read LaGriT
+read / lagrit /  mesh_124.lg / mo_124 / binary
+cmo / move / mo_124 / mo_final 
+define / MO_NAME_FRAC / mo_124
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_124
+cmo / delete / mo_124
+
+# Change to read LaGriT
+read / lagrit /  mesh_125.lg / mo_125 / binary
+cmo / move / mo_125 / mo_final 
+define / MO_NAME_FRAC / mo_125
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_125
+cmo / delete / mo_125
+
+# Change to read LaGriT
+read / lagrit /  mesh_126.lg / mo_126 / binary
+cmo / move / mo_126 / mo_final 
+define / MO_NAME_FRAC / mo_126
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_126
+cmo / delete / mo_126
+
+# Change to read LaGriT
+read / lagrit /  mesh_127.lg / mo_127 / binary
+cmo / move / mo_127 / mo_final 
+define / MO_NAME_FRAC / mo_127
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_127
+cmo / delete / mo_127
+
+# Change to read LaGriT
+read / lagrit /  mesh_128.lg / mo_128 / binary
+cmo / move / mo_128 / mo_final 
+define / MO_NAME_FRAC / mo_128
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_128
+cmo / delete / mo_128
+
+# Change to read LaGriT
+read / lagrit /  mesh_129.lg / mo_129 / binary
+cmo / move / mo_129 / mo_final 
+define / MO_NAME_FRAC / mo_129
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_129
+cmo / delete / mo_129
+
+# Change to read LaGriT
+read / lagrit /  mesh_130.lg / mo_130 / binary
+cmo / move / mo_130 / mo_final 
+define / MO_NAME_FRAC / mo_130
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_130
+cmo / delete / mo_130
+
+# Change to read LaGriT
+read / lagrit /  mesh_131.lg / mo_131 / binary
+cmo / move / mo_131 / mo_final 
+define / MO_NAME_FRAC / mo_131
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_131
+cmo / delete / mo_131
+
+# Change to read LaGriT
+read / lagrit /  mesh_132.lg / mo_132 / binary
+cmo / move / mo_132 / mo_final 
+define / MO_NAME_FRAC / mo_132
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_132
+cmo / delete / mo_132
+
+# Change to read LaGriT
+read / lagrit /  mesh_133.lg / mo_133 / binary
+cmo / move / mo_133 / mo_final 
+define / MO_NAME_FRAC / mo_133
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_133
+cmo / delete / mo_133
+
+# Change to read LaGriT
+read / lagrit /  mesh_134.lg / mo_134 / binary
+cmo / move / mo_134 / mo_final 
+define / MO_NAME_FRAC / mo_134
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_134
+cmo / delete / mo_134
+
+# Change to read LaGriT
+read / lagrit /  mesh_135.lg / mo_135 / binary
+cmo / move / mo_135 / mo_final 
+define / MO_NAME_FRAC / mo_135
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_135
+cmo / delete / mo_135
+
+# Change to read LaGriT
+read / lagrit /  mesh_136.lg / mo_136 / binary
+cmo / move / mo_136 / mo_final 
+define / MO_NAME_FRAC / mo_136
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_136
+cmo / delete / mo_136
+
+# Change to read LaGriT
+read / lagrit /  mesh_137.lg / mo_137 / binary
+cmo / move / mo_137 / mo_final 
+define / MO_NAME_FRAC / mo_137
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_137
+cmo / delete / mo_137
+
+# Change to read LaGriT
+read / lagrit /  mesh_138.lg / mo_138 / binary
+cmo / move / mo_138 / mo_final 
+define / MO_NAME_FRAC / mo_138
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_138
+cmo / delete / mo_138
+
+# Change to read LaGriT
+read / lagrit /  mesh_139.lg / mo_139 / binary
+cmo / move / mo_139 / mo_final 
+define / MO_NAME_FRAC / mo_139
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_139
+cmo / delete / mo_139
+
+# Change to read LaGriT
+read / lagrit /  mesh_140.lg / mo_140 / binary
+cmo / move / mo_140 / mo_final 
+define / MO_NAME_FRAC / mo_140
+
+addmesh / merge / cmo_tmp / cmo_tmp / mo_140
+cmo / delete / mo_140
+#Writing out merged fractures
+ 
+cmo select cmo_tmp
+dump lagrit part4.lg cmo_tmp
+finish 
+ 

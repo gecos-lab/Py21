@@ -1,0 +1,45 @@
+infile parameters_186.mlgi                                                      
+define/ID/186                                                                   
+define/OUTFILE_GMV/mesh_186.gmv                                                 
+define/OUTFILE_AVS/mesh_186.inp                                                 
+define/OUTFILE_LG/mesh_186.lg                                                   
+define/POLY_FILE/poly_186.inp                                                   
+define/QUAD_FILE/tmp_quad_186.inp                                               
+define/EXCAVATE_FILE/tmp_excavate_186.inp                                       
+define/PRE_FINAL_FILE/tmp_pre_final_186.inp                                     
+define/PRE_FINAL_MASSAGE/tmp_pre_final_massage_186.gmv                          
+define/H_SCALE/1.500000e-01                                                     
+define/H_EPS/1.500000e-08                                                       
+define/H_SCALE2/2.250000e-01                                                    
+define/H_EXTRUDE/7.500000e-02                                                   
+define/H_TRANS/-0.002422                                                        
+define/H_PRIME/6.000000e-02                                                     
+define/THETA/58.279507352075                                                    
+define/X1/2449.762340971290                                                     
+define/Y1/352.547121331108                                                      
+define/Z1/-0.000000000000                                                       
+define/X2/-2449.762340971290                                                    
+define/Y2/-352.547121331108                                                     
+define/Z2/0.000000000000                                                        
+define/FAMILY/1                                                                 
+finish                                                                          
+define/POLY_FILE/poly_186.inp                                                   
+read/POLY_FILE/mo_poly_work                                                     
+cmo/create/mo_pts///triplane                                                    
+copypts/mo_pts/mo_poly_work                                                     
+cmo/select/mo_pts                                                               
+triangulate/counterclockwise                                                    
+cmo/setatt/mo_pts/imt/1 0 0/ID                                                  
+cmo/setatt/mo_pts/itetclr/1 0 0/ID                                              
+resetpts/itp                                                                    
+cmo/delete/mo_poly_work                                                         
+cmo/select/mo_pts                                                               
+cmo/addatt/mo_pts/family_id/vint/scalar/nelements                               
+cmo/setatt/mo_pts/family_id/1 0 0/FAMILY                                        
+rotateln/1 0 0/nocopy/X1,Y1,Z1/X2,Y2,Z2/THETA/0.,0.,0.,/                        
+cmo/modatt/mo_pts/icr1/ioflag/l                                                 
+cmo/modatt/mo_pts/isn1/ioflag/l                                                 
+cmo/copy/mo_final/mo_pts                                                        
+dump/lagrit/OUTFILE_LG/mo_final                                                 
+dump/OUTFILE_AVS/mo_final                                                       
+finish                                                                          

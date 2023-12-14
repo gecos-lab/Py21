@@ -1,0 +1,522 @@
+ 
+ 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+*               *                                             *                 
+*               *    Program:  LaGriT V3.3.3   Linux          *                 
+*               *    Date Compile: 2023/12/13                 *                 
+*               *    Run Time: 2023/Dec 14  15:45:52          *                 
+*               *    Manual:   https://lagrit.lanl.gov        *                 
+*               *                                             *                 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+ 
+                               -----oOo-----                                    
+             LaGriT V3 LA-CC-15-069  https://github.com/lanl/LaGriT             
+  Copyright 2016. Triad National Security, LLC.  All rights reserved. This      
+  program was produced under U.S. Government contract 89233218CNA000001         
+  for Los Alamos National Laboratory (LANL), which is operated by Triad         
+  National Security, LLC for the U.S. Department of Energy/National Nuclear     
+  Security Administration.  All rights in the program are reserved by Triad     
+  National Security, LLC, and the U.S. Department of Energy/National Nuclear    
+  Security Administration. The Government is granted for itself and others      
+  acting on its behalf a nonexclusive, paid-up, irrevocable worldwide license   
+  in this material to reproduce, prepare derivative works, distribute copies    
+  to the public, perform publicly and display publicly, and to permit others to 
+  do so. This software is open source and available under the BSD-3 License.    
+                               -----oOo-----                                    
+ 
+ 
+Output log file: lagrit_logs/merge_poly_part5.out                               
+Command log file: lagrit_logs/merge_poly_part5.log                              
+ 
+# Change to read LaGriT                                                         
+read/lagrit/mesh_141.lg/mo_141/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_141/mo_final                                                        
+define/MO_NAME_FRAC/mo_141                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_141                                            
+cmo/copy/cmo_tmp/mo_141                                                         
+finish                                                                          
+cmo/delete/mo_141                                                               
+     Released Mesh Object: mo_141                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_142.lg/mo_142/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_142/mo_final                                                        
+define/MO_NAME_FRAC/mo_142                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_142                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_142                                                               
+     Released Mesh Object: mo_142                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_143.lg/mo_143/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_143/mo_final                                                        
+define/MO_NAME_FRAC/mo_143                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_143                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_143                                                               
+     Released Mesh Object: mo_143                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_144.lg/mo_144/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_144/mo_final                                                        
+define/MO_NAME_FRAC/mo_144                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_144                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_144                                                               
+     Released Mesh Object: mo_144                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_145.lg/mo_145/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_145/mo_final                                                        
+define/MO_NAME_FRAC/mo_145                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_145                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_145                                                               
+     Released Mesh Object: mo_145                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_146.lg/mo_146/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_146/mo_final                                                        
+define/MO_NAME_FRAC/mo_146                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_146                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_146                                                               
+     Released Mesh Object: mo_146                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_147.lg/mo_147/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_147/mo_final                                                        
+define/MO_NAME_FRAC/mo_147                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_147                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_147                                                               
+     Released Mesh Object: mo_147                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_148.lg/mo_148/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_148/mo_final                                                        
+define/MO_NAME_FRAC/mo_148                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_148                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_148                                                               
+     Released Mesh Object: mo_148                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_149.lg/mo_149/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_149/mo_final                                                        
+define/MO_NAME_FRAC/mo_149                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_149                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_149                                                               
+     Released Mesh Object: mo_149                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_150.lg/mo_150/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_150/mo_final                                                        
+define/MO_NAME_FRAC/mo_150                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_150                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_150                                                               
+     Released Mesh Object: mo_150                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_151.lg/mo_151/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_151/mo_final                                                        
+define/MO_NAME_FRAC/mo_151                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_151                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_151                                                               
+     Released Mesh Object: mo_151                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_152.lg/mo_152/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_152/mo_final                                                        
+define/MO_NAME_FRAC/mo_152                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_152                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_152                                                               
+     Released Mesh Object: mo_152                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_153.lg/mo_153/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_153/mo_final                                                        
+define/MO_NAME_FRAC/mo_153                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_153                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_153                                                               
+     Released Mesh Object: mo_153                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_154.lg/mo_154/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_154/mo_final                                                        
+define/MO_NAME_FRAC/mo_154                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_154                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_154                                                               
+     Released Mesh Object: mo_154                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_155.lg/mo_155/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_155/mo_final                                                        
+define/MO_NAME_FRAC/mo_155                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_155                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_155                                                               
+     Released Mesh Object: mo_155                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_156.lg/mo_156/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_156/mo_final                                                        
+define/MO_NAME_FRAC/mo_156                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_156                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_156                                                               
+     Released Mesh Object: mo_156                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_157.lg/mo_157/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_157/mo_final                                                        
+define/MO_NAME_FRAC/mo_157                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_157                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_157                                                               
+     Released Mesh Object: mo_157                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_158.lg/mo_158/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_158/mo_final                                                        
+define/MO_NAME_FRAC/mo_158                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_158                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_158                                                               
+     Released Mesh Object: mo_158                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_159.lg/mo_159/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_159/mo_final                                                        
+define/MO_NAME_FRAC/mo_159                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_159                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_159                                                               
+     Released Mesh Object: mo_159                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_160.lg/mo_160/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_160/mo_final                                                        
+define/MO_NAME_FRAC/mo_160                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_160                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_160                                                               
+     Released Mesh Object: mo_160                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_161.lg/mo_161/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_161/mo_final                                                        
+define/MO_NAME_FRAC/mo_161                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_161                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_161                                                               
+     Released Mesh Object: mo_161                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_162.lg/mo_162/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_162/mo_final                                                        
+define/MO_NAME_FRAC/mo_162                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_162                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_162                                                               
+     Released Mesh Object: mo_162                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_163.lg/mo_163/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_163/mo_final                                                        
+define/MO_NAME_FRAC/mo_163                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_163                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_163                                                               
+     Released Mesh Object: mo_163                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_164.lg/mo_164/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_164/mo_final                                                        
+define/MO_NAME_FRAC/mo_164                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_164                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_164                                                               
+     Released Mesh Object: mo_164                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_165.lg/mo_165/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_165/mo_final                                                        
+define/MO_NAME_FRAC/mo_165                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_165                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_165                                                               
+     Released Mesh Object: mo_165                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_166.lg/mo_166/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_166/mo_final                                                        
+define/MO_NAME_FRAC/mo_166                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_166                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_166                                                               
+     Released Mesh Object: mo_166                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_167.lg/mo_167/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_167/mo_final                                                        
+define/MO_NAME_FRAC/mo_167                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_167                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_167                                                               
+     Released Mesh Object: mo_167                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_168.lg/mo_168/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_168/mo_final                                                        
+define/MO_NAME_FRAC/mo_168                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_168                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_168                                                               
+     Released Mesh Object: mo_168                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_169.lg/mo_169/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_169/mo_final                                                        
+define/MO_NAME_FRAC/mo_169                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_169                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_169                                                               
+     Released Mesh Object: mo_169                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_170.lg/mo_170/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_170/mo_final                                                        
+define/MO_NAME_FRAC/mo_170                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_170                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_170                                                               
+     Released Mesh Object: mo_170                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_171.lg/mo_171/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_171/mo_final                                                        
+define/MO_NAME_FRAC/mo_171                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_171                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_171                                                               
+     Released Mesh Object: mo_171                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_172.lg/mo_172/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_172/mo_final                                                        
+define/MO_NAME_FRAC/mo_172                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_172                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_172                                                               
+     Released Mesh Object: mo_172                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_173.lg/mo_173/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_173/mo_final                                                        
+define/MO_NAME_FRAC/mo_173                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_173                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_173                                                               
+     Released Mesh Object: mo_173                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_174.lg/mo_174/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_174/mo_final                                                        
+define/MO_NAME_FRAC/mo_174                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_174                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_174                                                               
+     Released Mesh Object: mo_174                                               
+# Change to read LaGriT                                                         
+read/lagrit/mesh_175.lg/mo_175/binary                                           
+cmo/addatt/mo_final/family_id/VINT/scalar/nelements/linear/temporary/agltn      
+finish                                                                          
+cmo/move/mo_175/mo_final                                                        
+define/MO_NAME_FRAC/mo_175                                                      
+addmesh/merge/cmo_tmp/cmo_tmp/mo_175                                            
+cmo/move/-tmp_source_internal-/cmo_tmp                                          
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/mo_175                                                               
+     Released Mesh Object: mo_175                                               
+#Writing out merged fractures                                                   
+cmo select cmo_tmp                                                              
+dump lagrit part5.lg cmo_tmp                                                    
+finish                                                                          
+LaGriT successfully completed                                                   

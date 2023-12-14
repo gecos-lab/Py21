@@ -1,0 +1,126 @@
+ 
+ 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+*               *                                             *                 
+*               *    Program:  LaGriT V3.3.3   Linux          *                 
+*               *    Date Compile: 2023/12/13                 *                 
+*               *    Run Time: 2023/Dec 14  15:45:51          *                 
+*               *    Manual:   https://lagrit.lanl.gov        *                 
+*               *                                             *                 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+ 
+                               -----oOo-----                                    
+             LaGriT V3 LA-CC-15-069  https://github.com/lanl/LaGriT             
+  Copyright 2016. Triad National Security, LLC.  All rights reserved. This      
+  program was produced under U.S. Government contract 89233218CNA000001         
+  for Los Alamos National Laboratory (LANL), which is operated by Triad         
+  National Security, LLC for the U.S. Department of Energy/National Nuclear     
+  Security Administration.  All rights in the program are reserved by Triad     
+  National Security, LLC, and the U.S. Department of Energy/National Nuclear    
+  Security Administration. The Government is granted for itself and others      
+  acting on its behalf a nonexclusive, paid-up, irrevocable worldwide license   
+  in this material to reproduce, prepare derivative works, distribute copies    
+  to the public, perform publicly and display publicly, and to permit others to 
+  do so. This software is open source and available under the BSD-3 License.    
+                               -----oOo-----                                    
+ 
+ 
+Output log file: lagrit_logs/mesh_poly_205.out                                  
+Command log file: lagrit_logs/mesh_poly_205.log                                 
+ 
+# LaGriT Parameter file                                                         
+infile parameters_205.mlgi                                                      
+define/ID/205                                                                   
+define/OUTFILE_GMV/mesh_205.gmv                                                 
+define/OUTFILE_AVS/mesh_205.inp                                                 
+define/OUTFILE_LG/mesh_205.lg                                                   
+define/POLY_FILE/poly_205.inp                                                   
+define/QUAD_FILE/tmp_quad_205.inp                                               
+define/EXCAVATE_FILE/tmp_excavate_205.inp                                       
+define/PRE_FINAL_FILE/tmp_pre_final_205.inp                                     
+define/PRE_FINAL_MASSAGE/tmp_pre_final_massage_205.gmv                          
+define/H_SCALE/1.500000e-01                                                     
+define/H_EPS/1.500000e-08                                                       
+define/H_SCALE2/2.250000e-01                                                    
+define/H_EXTRUDE/7.500000e-02                                                   
+define/H_TRANS/-0.002422                                                        
+define/H_PRIME/6.000000e-02                                                     
+define/THETA/64.298205286352                                                    
+define/X1/2430.456385430550                                                     
+define/Y1/467.447064938786                                                      
+define/Z1/-0.000000000000                                                       
+define/X2/-2430.456385430550                                                    
+define/Y2/-467.447064938786                                                     
+define/Z2/0.000000000000                                                        
+define/FAMILY/1                                                                 
+finish                                                                          
+# Name of input files that contains the boundary of the polygon/fracture        
+define/POLY_FILE/poly_205.inp                                                   
+## Triangulate Fracture perimeter without point addition                        
+read/POLY_FILE/mo_poly_work                                                     
+read/avs/poly_205.inp/mo_poly_work                                              
+geniee                                                                          
+finish                                                                          
+cmo/status/brief                                                                
+ 
+The current-mesh-object(CMO) is: mo_poly_work                                   
+ 
+  1 Mesh Object name: mo_poly_work                                              
+    number of nodes =             4        number of elements =            3    
+    dimensions geometry =         3        element type =                lin    
+    dimensions topology =         1        2 nodes      2 faces      1 edges    
+    boundary flag =        16000000        status =                   active    
+ 
+ 
+finish                                                                          
+finish                                                                          
+cmo/create/mo_pts///triplane                                                    
+copypts/mo_pts/mo_poly_work                                                     
+copypts added nodes          1 to          4                                    
+cmo/select/mo_pts                                                               
+triangulate/counterclockwise                                                    
+filter/1,0,0                                                                    
+FILTER:Use internal epsilonl value =   0.495524946917E-11                       
+FILTER:Dudding duplicate points:           0                                    
+finish                                                                          
+rmpoint/compress                                                                
+         0 points removed and          0 elements removed.                      
+RMPOINT: new point count is            4                                        
+RMPOINT: new element count is          2                                        
+finish                                                                          
+resetpts/itp                                                                    
+geniee                                                                          
+finish                                                                          
+finish                                                                          
+cmo/setatt/mo_pts/imt/1 0 0/ID                                                  
+         4 values reset for attribute imt1                                      
+ 
+cmo/setatt/mo_pts/itetclr/1 0 0/ID                                              
+         2 values reset for attribute itetclr                                   
+ 
+resetpts/itp                                                                    
+geniee                                                                          
+finish                                                                          
+cmo/delete/mo_poly_work                                                         
+     Released Mesh Object: mo_poly_work                                         
+cmo/select/mo_pts                                                               
+# Create Family element set                                                     
+cmo/addatt/mo_pts/family_id/vint/scalar/nelements                               
+cmo/setatt/mo_pts/family_id/1 0 0/FAMILY                                        
+         2 values reset for attribute family_id                                 
+ 
+# Rotate                                                                        
+rotateln/1 0 0/nocopy/X1,Y1,Z1/X2,Y2,Z2/THETA/0.,0.,0.,/                        
+# Supress AVS output of a icr and isn node attributes                           
+cmo/modatt/mo_pts/icr1/ioflag/l                                                 
+cmo/modatt/mo_pts/isn1/ioflag/l                                                 
+cmo/copy/mo_final/mo_pts                                                        
+# Output mesh in AVS UCD format and LaGriT binary format.                       
+dump/lagrit/OUTFILE_LG/mo_final                                                 
+dump/OUTFILE_AVS/mo_final                                                       
+dump/avs/mesh_205.inp/mo_final                                                  
+cmo/modatt/-def-/-def-/ioflag/x                                                 
+finish                                                                          
+finish                                                                          
+finish                                                                          
+LaGriT successfully completed                                                   

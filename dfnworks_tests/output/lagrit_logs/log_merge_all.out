@@ -1,0 +1,150 @@
+ 
+ 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+*               *                                             *                 
+*               *    Program:  LaGriT V3.3.3   Linux          *                 
+*               *    Date Compile: 2023/12/13                 *                 
+*               *    Run Time: 2023/Dec 14  15:45:52          *                 
+*               *    Manual:   https://lagrit.lanl.gov        *                 
+*               *                                             *                 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+ 
+                               -----oOo-----                                    
+             LaGriT V3 LA-CC-15-069  https://github.com/lanl/LaGriT             
+  Copyright 2016. Triad National Security, LLC.  All rights reserved. This      
+  program was produced under U.S. Government contract 89233218CNA000001         
+  for Los Alamos National Laboratory (LANL), which is operated by Triad         
+  National Security, LLC for the U.S. Department of Energy/National Nuclear     
+  Security Administration.  All rights in the program are reserved by Triad     
+  National Security, LLC, and the U.S. Department of Energy/National Nuclear    
+  Security Administration. The Government is granted for itself and others      
+  acting on its behalf a nonexclusive, paid-up, irrevocable worldwide license   
+  in this material to reproduce, prepare derivative works, distribute copies    
+  to the public, perform publicly and display publicly, and to permit others to 
+  do so. This software is open source and available under the BSD-3 License.    
+                               -----oOo-----                                    
+ 
+ 
+Output log file: lagrit_logs/log_merge_all.out                                  
+Command log file: lagrit_logs/log_merge_all.log                                 
+ 
+read/lagrit/part1.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/copy/mo_all/cmo_tmp                                                         
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+read/lagrit/part2.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/move/-tmp_source_internal-/mo_all                                           
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+read/lagrit/part3.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/move/-tmp_source_internal-/mo_all                                           
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+read/lagrit/part4.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/move/-tmp_source_internal-/mo_all                                           
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+read/lagrit/part5.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/move/-tmp_source_internal-/mo_all                                           
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+read/lagrit/part6.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/move/-tmp_source_internal-/mo_all                                           
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+read/lagrit/part7.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/move/-tmp_source_internal-/mo_all                                           
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+read/lagrit/part8.lg/junk/binary                                                
+cmo/addatt/cmo_tmp/family_id/VINT/scalar/nelements/linear/temporary/agltn       
+finish                                                                          
+addmesh/merge/mo_all/mo_all/cmo_tmp                                             
+cmo/move/-tmp_source_internal-/mo_all                                           
+finish                                                                          
+cmo/delete/-tmp_source_internal-/                                               
+     Released Mesh Object: -tmp_source_internal-                                
+finish                                                                          
+cmo/delete/cmo_tmp                                                              
+     Released Mesh Object: cmo_tmp                                              
+cmo/modatt/mo_all/icr1/ioflag/l                                                 
+cmo/modatt/mo_all/isn1/ioflag/l                                                 
+cmo/modatt/mo_all/itp1/ioflag/l                                                 
+#dump / reduced_mesh.gmv / mo_all                                               
+dump/reduced_mesh.inp/mo_all                                                    
+dump/avs/reduced_mesh.inp/mo_all                                                
+cmo/modatt/-def-/-def-/ioflag/x                                                 
+finish                                                                          
+finish                                                                          
+quality                                                                         
+ 
+epsilonl, epsilonaspect:   3.0210016E-11  2.7571022E-32                         
+--------------------------------------------                                    
+elements with aspect ratio < .01:                    5                          
+elements with aspect ratio b/w .01 and .02:          1                          
+elements with aspect ratio b/w .02 and .05:         18                          
+elements with aspect ratio b/w .05 and .1 :         32                          
+elements with aspect ratio b/w .1  and .2 :         41                          
+elements with aspect ratio b/w .2  and .5 :        167                          
+elements with aspect ratio b/w .5  and 1. :        471                          
+min aspect ratio =  0.4915E-02  max aspect ratio =  0.9986E+00                  
+ 
+epsilonvol:   1.0116907E-07                                                     
+---------------------------------------                                         
+element volumes b/w  0.6546E+00 and  0.2887E+01:         9                      
+element volumes b/w  0.2887E+01 and  0.1274E+02:        27                      
+element volumes b/w  0.1274E+02 and  0.5617E+02:       156                      
+element volumes b/w  0.5617E+02 and  0.2478E+03:       445                      
+element volumes b/w  0.2478E+03 and  0.1093E+04:        98                      
+min volume =   6.5461388E-01  max volume =   1.0927793E+03                      
+-----------------------------------------------------------                     
+       735 total elements evaluated.                                            
+ 
+finish                                                                          
+LaGriT successfully completed                                                   
