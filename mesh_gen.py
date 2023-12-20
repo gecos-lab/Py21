@@ -4,15 +4,10 @@ import pyvista as pv
 import numpy as np
 from slices import slice_frac_net
 
-# src_path = os.getcwd()
-# jobname = src_path + "/output"
-#
 x_dim = 135
-y_dim = 225
+y_dim = 100
 z_dim = 15
-#
-# print(np.sqrt(x_dim**2+y_dim**2+z_dim**2)*10**-5)
-#
+
 points = np.array([[-x_dim/2, -y_dim/2, z_dim/2],
                    [-x_dim/2, y_dim/2, z_dim/2],
                    [x_dim/2, y_dim/2, z_dim/2],
@@ -30,81 +25,14 @@ bounding_box = pv.PolyData(points, lines=[5, 0, 3, 2, 1, 0,
                                           5, 2, 6, 5, 1, 2,
                                           5, 1, 5, 4, 0, 1])
 
-# DFN = DFNWORKS(jobname,
-#                ncpu=8)
-#
-# DFN.params['domainSize']['value'] = [x_dim, y_dim, z_dim]
-# DFN.params['h']['value'] = 0.1
-# DFN.params['stopCondition']['value'] = 0
-# DFN.params['nPoly']['value'] = 100
-# DFN.params['seed']['value'] = 0
-# DFN.params['ignoreBoundaryFaces']['value'] = True
-# DFN.params['orientationOption']['value'] = 2
-# DFN.params['regions']['value'] = [[-x_dim, x_dim, -y_dim, y_dim, -z_dim, z_dim]]
-# DFN.params['numOfRegions']['value']=1 # There will be one region in the domain
-#
 log_mean = 17.05
 log_std = 33.87
-#
-#
+
 var_normal = np.log((log_std**2/(log_mean**2))+1)
 
 m_normal = np.log(log_mean)-var_normal/2
 
 std_normal = np.sqrt(var_normal)
-#
-#
-# DFN.add_fracture_family(shape="rect",
-#                         distribution="log_normal",
-#                         probability=1,
-#                         kappa=100,
-#                         dip=45,
-#                         strike=167,
-#                         log_mean=m_normal,
-#                         log_std=std_normal,
-#                         min_radius=1.0,
-#                         max_radius=10.0,
-#                         region=1)
-
-#"""
-#   :synopsis: Driver run file for TPL example
-#   :version: 2.0
-#   :maintainer: Jeffrey Hyman
-#.. moduleauthor:: Jeffrey Hyman <jhyman@lanl.gov>
-#"""
-
-
-# src_path = os.getcwd()
-# jobname = src_path + "/output"
-#
-#
-# DFN = DFNWORKS(jobname,
-#                ncpu=8)
-#
-# DFN.params['domainSize']['value'] = [x_dim, y_dim, z_dim]
-# DFN.params['h']['value'] = 0.1
-# DFN.params['stopCondition']['value'] = 0
-# DFN.params['nPoly']['value'] = 40
-# DFN.params['seed']['value'] = 1
-# DFN.params['boundaryFaces']['value'] = [0, 0, 1, 1, 0, 0]
-#
-# DFN.add_fracture_family(shape="rect",
-#                         distribution="exp",
-#                         probability = 1,
-#                         kappa=0.1,
-#                         theta=0,
-#                         phi=0,
-#                         exp_mean=2.5,
-#                         min_radius=1.0,
-#                         max_radius=40.0,
-#                         p32=0.5)
-#
-# DFN.dfn_gen()
-#
-# # DFN.make_working_directory()
-# # DFN.check_input()
-# # DFN.create_network()
-# # DFN.mesh_network()
 
 jobname = os.getcwd() + "/dfnworks_tests/output"
 
