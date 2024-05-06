@@ -36,7 +36,7 @@ scooby==0.7.2
 shapely==2.0.1
 six==1.16.0
 tzdata==2023.3
-urllib3==2.0.3
+urllib3==2.0.7
 vtk==9.2.6
 wslink==1.10.1
 yarl==1.9.2
