@@ -5,3 +5,14 @@ shapely
 geopandas
 networkx
 python-ternary
+numpy
+h5py
+scipy
+matplotlib
+networkx
+mplstereonet
+fpdf
+setuptools
+seaborn
+pyvtk
+mpmath
